@@ -1,0 +1,38 @@
+generated: '2026-07-21'
+method: searched
+source: https://terrastruct.com/plugins
+description: >-
+  Terrastruct's client-side, embeddable, and editor-integration surfaces —
+  distinct from the D2 CLI and libraries. Covers the browser playground, the
+  WASM-embeddable D2.js renderer, the hosted D2 Studio IDE, and the official
+  editor plugins that render D2 inside VSCode, Vim, and Obsidian.
+components:
+  hosted:
+    - name: D2 Studio
+      url: https://terrastruct.com/d2-studio
+      app: https://app.terrastruct.com/
+      description: >-
+        Hosted diagramming IDE supporting both drag-and-drop and text-to-diagram
+        editing on top of D2. Terrastruct's commercial SaaS product.
+    - name: D2 Playground
+      url: https://play.d2lang.com
+      source: https://github.com/terrastruct/d2-playground
+      description: Online runner to write, learn, and render D2 in the browser.
+  embeddable:
+    - name: D2.js
+      package: "@terrastruct/d2"
+      url: https://www.npmjs.com/package/@terrastruct/d2
+      description: >-
+        WASM build of D2 wrapped for JavaScript, so D2 rendering can be embedded
+        directly in a browser or Node application.
+  editor_plugins:
+    - name: D2 for VSCode
+      url: https://marketplace.visualstudio.com/items?itemName=terrastruct.d2
+      source: https://github.com/terrastruct/d2-vscode
+      description: Syntax highlighting and live preview of D2 files in VSCode.
+    - name: D2 for Vim
+      source: https://github.com/terrastruct/d2-vim
+      description: Vim plugin for editing D2 files.
+    - name: D2 for Obsidian
+      source: https://github.com/terrastruct/d2-obsidian
+      description: Render D2 diagrams inside Obsidian notes.

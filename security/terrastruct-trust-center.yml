@@ -1,0 +1,31 @@
+generated: '2026-07-21'
+method: searched
+probe: true
+source: https://terrastruct.com/security/
+url: https://terrastruct.com/security/
+description: >-
+  Terrastruct's trust & security page. The page explicitly states Terrastruct
+  has been audited by a SOC2-certified auditor and holds a SOC 2 certification,
+  and describes GDPR-style data-deletion rights. It also offers paid responsible
+  vulnerability disclosure and case-by-case enterprise security customizations
+  (single-tenant, customer-managed encryption keys, backup frequency).
+certifications:
+  - name: SOC 2
+    status: certified
+    evidence: >-
+      "Terrastruct has been audited by a SOC2-certified auditor and has received
+      a SOC2 certification."
+  - name: GDPR
+    status: supported
+    evidence: Page documents data-deletion rights ("How can I delete my data?").
+evidence:
+  - source: https://terrastruct.com/security/
+    keywords:
+      - soc2
+      - responsible disclosure
+      - gdpr
+      - data deletion
+note: >-
+  ISO 27001 was flagged by the automated keyword probe but was NOT confirmed in
+  the visible page text (which explicitly states SOC 2 only); omitted to avoid
+  overstating. Re-check the full security page for any additional certifications.

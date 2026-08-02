@@ -1,0 +1,74 @@
+generated: '2026-07-21'
+method: searched
+source: https://github.com/terrastruct/d2#install
+description: >-
+  First-party Terrastruct / D2 client libraries, CLI binary, and editor
+  packages. D2 is a modern, open-source (MPL-2.0) diagram scripting language;
+  it ships as a Go CLI and as a WASM-backed JavaScript library (D2.js), and can
+  be embedded in Go programs as a library (d2lib / d2oracle). Verified against
+  the public registries at fetch time; registry HTTP status recorded inline.
+packages:
+  - language: go
+    registry: pkg.go.dev
+    name: oss.terrastruct.com/d2
+    url: https://pkg.go.dev/oss.terrastruct.com/d2
+    source: https://github.com/terrastruct/d2
+    install: go install oss.terrastruct.com/d2@latest
+    version: v0.7.1
+    official: true
+    status: 200
+    note: >-
+      The D2 CLI and the D2 library (d2lib, d2oracle for programmatic diagram
+      generation). See cli/terrastruct-cli.yml for the command surface.
+  - language: javascript
+    registry: npm
+    name: "@terrastruct/d2"
+    url: https://www.npmjs.com/package/@terrastruct/d2
+    source: https://github.com/terrastruct/d2
+    install: npm install @terrastruct/d2
+    version: 0.1.33
+    official: true
+    status: 200
+    note: D2.js — a wrapper around the WASM build of D2 for use in the browser and Node.
+  - language: shell
+    registry: homebrew
+    name: d2
+    url: https://formulae.brew.sh/formula/d2
+    source: https://github.com/terrastruct/d2
+    install: brew install d2
+    version: 0.7.1
+    official: true
+    status: 200
+    note: Official Homebrew formula for the D2 CLI.
+  - language: shell
+    registry: github
+    name: d2
+    url: https://github.com/terrastruct/d2/releases
+    source: https://github.com/terrastruct/d2
+    install: curl -fsSL https://d2lang.com/install.sh | sh -s --
+    version: v0.7.1
+    official: true
+    note: Official install script + release binaries (includes manpages).
+  - language: typescript
+    registry: vscode-marketplace
+    name: terrastruct.d2
+    url: https://marketplace.visualstudio.com/items?itemName=terrastruct.d2
+    source: https://github.com/terrastruct/d2-vscode
+    install: ext install terrastruct.d2
+    official: true
+    status: 200
+    note: Official VSCode extension for D2 files (syntax highlighting, preview).
+  - language: vimscript
+    registry: github
+    name: d2-vim
+    url: https://github.com/terrastruct/d2-vim
+    source: https://github.com/terrastruct/d2-vim
+    official: true
+    note: Official Vim plugin for D2 files.
+  - language: javascript
+    registry: obsidian
+    name: d2-obsidian
+    url: https://github.com/terrastruct/d2-obsidian
+    source: https://github.com/terrastruct/d2-obsidian
+    official: true
+    note: Official Obsidian plugin for rendering D2 diagrams in notes.

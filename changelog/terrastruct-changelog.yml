@@ -1,0 +1,46 @@
+generated: '2026-07-21'
+method: searched
+source: https://github.com/terrastruct/d2/blob/master/CHANGELOG.md
+description: >-
+  Release changelog for D2, Terrastruct's open-source diagram scripting
+  language. Maintained per-version under ci/release/changelogs/ in the d2 repo
+  and surfaced via GitHub Releases. D2.js (the WASM/JS build) keeps a separate
+  changelog. Recent-window entries only.
+scheme: semver
+current_version: v0.7.1
+released: '2025-08-19'
+changelog_url: https://github.com/terrastruct/d2/blob/master/CHANGELOG.md
+releases_url: https://github.com/terrastruct/d2/releases
+d2js_changelog: https://github.com/terrastruct/d2/blob/master/d2js/js/CHANGELOG.md
+entries:
+  - version: v0.7.1
+    date: '2025-08-19'
+    breaking: true
+    highlights:
+      - ASCII renders — output `txt` to render diagrams as ASCII art.
+      - "`cross` arrowhead shape."
+      - markdown, latex, and code can be used as edge labels.
+      - "CLI monospace font flags: --font-mono / --font-mono-bold / --font-mono-italic / --font-mono-semibold."
+      - "Breaking: using D2 as a library, a FontFamily with sketch renders now uses the font instead of ignoring it."
+  - version: v0.7.0
+    date: '2025-05-02'
+    breaking: false
+    highlights:
+      - Connections can include icons.
+      - "`suspend`/`unsuspend` to define and instantiate models."
+      - Glob filtering of edges by endpoint-node properties; `level` filter.
+      - markdown, latex, and code can be used as object labels.
+      - "`shape: c4-person` for C4-model person shapes."
+  - version: v0.6.9
+    date: '2025-02-05'
+    breaking: false
+    highlights:
+      - "`style.animated: true` supported on shapes."
+      - Connections support `link`.
+      - GitHub-flavored tables in markdown blocks.
+      - "`d2 fmt` gains a `--check` flag."
+  - version: v0.6.8
+    date: '2024-11-07'
+    breaking: false
+    highlights:
+      - Routine maintenance release (see GitHub Releases for details).

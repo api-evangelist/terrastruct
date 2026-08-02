@@ -1,7 +1,27 @@
 aid: terrastruct
 name: Terrastruct
-description: Terrastruct is a company surfaced as a portfolio company of bloomberg-beta and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Terrastruct builds diagramming tools crafted to visualize software
+  architecture. Its flagship product is D2, a modern, open-source (MPL-2.0)
+  diagram scripting language that turns text into diagrams (SVG, PNG, PDF, PPTX,
+  GIF, and ASCII). Terrastruct also builds D2 Studio, a hosted drag-and-drop and
+  text-to-diagram IDE, and TALA, a proprietary layout engine designed
+  specifically for software architecture diagrams. Rather than a public REST
+  API, D2 is consumed as a CLI, as a Go library (d2lib / d2oracle) for
+  programmatic diagram generation, and as a WASM-backed JavaScript library
+  (D2.js), with official VSCode, Vim, and Obsidian editor plugins.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://terrastruct.com/images/logos/logo_black.svg
 url: https://raw.githubusercontent.com/api-evangelist/terrastruct/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +31,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Diagramming
+- Diagrams as Code
+- Developer Tools
+- Software Architecture
+- Open Source
+- Data Visualization
+- CLI
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +50,48 @@ maintainers:
 common:
 - type: Website
   url: https://terrastruct.com/
+- type: Documentation
+  url: https://d2lang.com
+- type: GettingStarted
+  url: https://d2lang.com/tour/intro/
+- type: GitHubOrganization
+  url: https://github.com/terrastruct
+- type: Blog
+  url: https://terrastruct.com/blog/1
+- type: Support
+  url: https://terrastruct.com/support
+- type: Login
+  url: https://app.terrastruct.com/
+- type: TermsOfService
+  url: https://terrastruct.com/terms-and-conditions
+- type: PrivacyPolicy
+  url: https://terrastruct.com/privacy-policy
+- type: Packages
+  url: packages/terrastruct-packages.yml
+- type: SDKs
+  url: packages/terrastruct-packages.yml
+- type: CLI
+  url: cli/terrastruct-cli.yml
+- type: Components
+  url: components/terrastruct-components.yml
+- type: ChangeLog
+  url: changelog/terrastruct-changelog.yml
+- type: WellKnown
+  url: well-known/terrastruct-well-known.yml
+- type: DomainSecurity
+  url: security/terrastruct-domain-security.yml
+- type: VulnerabilityDisclosure
+  url: security/terrastruct-vulnerability-disclosure.yml
+- type: Security
+  url: security/terrastruct-vulnerability-disclosure.yml
+- type: TrustCenter
+  url: security/terrastruct-trust-center.yml
+- type: Compliance
+  url: security/terrastruct-trust-center.yml
+- type: LLMsTxt
+  url: llms/terrastruct-llms.txt
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 9
+  pass: local-v1

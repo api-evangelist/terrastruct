@@ -1,0 +1,49 @@
+generated: '2026-07-21'
+method: probed
+source: live HTTP probes of Terrastruct base hosts
+description: >-
+  Probe of standard /.well-known/ discovery endpoints across Terrastruct's
+  public hosts. No well-known documents are published — terrastruct.com returns
+  404 for every probed path, and d2lang.com (an S3-hosted static docs site)
+  returns 403/AccessDenied for all paths. Absence is a valid, recorded result.
+probes:
+  - host: terrastruct.com
+    path: /.well-known/security.txt
+    status: 404
+    file: null
+  - host: terrastruct.com
+    path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - host: terrastruct.com
+    path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - host: terrastruct.com
+    path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - host: terrastruct.com
+    path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - host: d2lang.com
+    path: /.well-known/security.txt
+    status: 403
+    file: null
+  - host: d2lang.com
+    path: /.well-known/openid-configuration
+    status: 403
+    file: null
+  - host: d2lang.com
+    path: /.well-known/oauth-authorization-server
+    status: 403
+    file: null
+  - host: d2lang.com
+    path: /.well-known/api-catalog
+    status: 403
+    file: null
+  - host: d2lang.com
+    path: /.well-known/ai-plugin.json
+    status: 403
+    file: null

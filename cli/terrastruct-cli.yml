@@ -1,0 +1,57 @@
+generated: '2026-07-21'
+method: searched
+source: https://github.com/terrastruct/d2
+description: >-
+  The D2 command-line interface — the primary way to turn D2 text into
+  rendered diagrams (SVG, PNG, PDF, PPTX, GIF, and ASCII/txt). D2 is
+  Terrastruct's open-source (MPL-2.0) diagram scripting language. The binary
+  itself is catalogued in packages/terrastruct-packages.yml; this artifact
+  enumerates the command/flag surface.
+docs: https://d2lang.com
+repo: https://github.com/terrastruct/d2
+install:
+  script: curl -fsSL https://d2lang.com/install.sh | sh -s --
+  homebrew: brew install d2
+  go: go install oss.terrastruct.com/d2@latest
+  uninstall: curl -fsSL https://d2lang.com/install.sh | sh -s -- --uninstall
+commands:
+  render:
+    - name: "d2 <input.d2> [output]"
+      description: "Compile and render a .d2 file to an output file; format is inferred from the extension (.svg/.png/.pdf/.pptx/.gif/.txt)."
+    - name: "d2 --watch <input.d2>"
+      description: "Watch mode: recompile and live-reload the diagram in the browser on every file change."
+  format:
+    - name: "d2 fmt <input.d2>"
+      description: "Auto-format a D2 source file in place (the D2 autoformatter)."
+    - name: "d2 fmt --check"
+      description: "Check whether files are formatted without writing changes (CI-friendly)."
+  layout:
+    - name: "d2 layout"
+      description: "List available layout engines (dagre, elk, and the paid TALA engine)."
+    - name: "d2 themes"
+      description: "List the available built-in diagram themes."
+key_flags:
+  - flag: "--watch, -w"
+    description: "Watch the input file and live-reload in the browser."
+  - flag: "--theme, -t"
+    description: "Set the diagram theme by ID."
+  - flag: "--layout, -l"
+    description: "Choose the layout engine (dagre, elk, tala)."
+  - flag: "--sketch, -s"
+    description: "Render the diagram in a hand-drawn sketch style."
+  - flag: "--pad"
+    description: "Set padding, in pixels, around the rendered diagram."
+  - flag: "--animate-interval"
+    description: "For multi-board diagrams / GIFs, milliseconds between boards (defaults to 1000ms)."
+  - flag: "--font-mono / --font-mono-bold / --font-mono-italic / --font-mono-semibold"
+    description: "Supply custom monospace font files (added in v0.7.1)."
+key_flows:
+  render_svg:
+    command: "d2 input.d2 output.svg"
+    description: The core flow — compile D2 text into an SVG diagram.
+  live_preview:
+    command: "d2 --watch input.d2"
+    description: Open a live-reloading browser preview that updates as you edit the source.
+  ascii_export:
+    command: "d2 input.d2 output.txt"
+    description: Render the diagram as ASCII art (added in v0.7.1).
